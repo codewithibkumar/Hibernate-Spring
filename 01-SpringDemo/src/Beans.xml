@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="carInsurance"
+		class="com.techseries.spring.CarInsurance">
+	<constructor-arg type="java.lang.String" value="Jeevan Anand"></constructor-arg>
+	<constructor-arg type="int" value="124567"></constructor-arg>
+	<property name="validity" value="2019"></property>
+	
+	</bean>
+	<bean id="bikeInsurance"
+		class="com.techseries.spring.BikeInsurance">
+	<constructor-arg name="offers" ref="offers"></constructor-arg>
+	</bean>
+	<bean id="offers" class="com.techseries.spring.Offer"></bean>
+</beans>
