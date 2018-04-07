@@ -3,7 +3,7 @@ package com.techseries.hiber;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity (name="Student_Data")
 public class Student {
 
 	@Id
